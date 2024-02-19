@@ -9,6 +9,7 @@
     </title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -168,7 +169,7 @@
                   <div class="bg-[#1DD1001A] p-4 flex gap-2 items-center rounded-2xl">
                     <img src="images/seat-green.png" alt="">
                     <p class="text-[#1DD100] font-semibold">
-                      <span id="seat-left">16</span> Seats Left
+                      <span id="seat-left">20</span> Seats Left
                     </p>
     
     
@@ -303,6 +304,17 @@
                     <button class="btn w-28 py-2  text-s add-btn">D4</button>
                   </div>
 
+                  <!-- E serial Seat -->
+
+
+                  <div class="flex gap-6 items-center text-lg my-9 justify-around">
+                    <h1>E</h1>
+                    <button class="btn w-28 py-2  text-s add-btn">E1</button>
+                    <button class="btn w-28 py-2  text-s add-btn mr-1">E2</button>
+                    <button class="btn w-28 py-2  text-s add-btn">E3</button>
+                    <button class="btn w-28 py-2  text-s add-btn">E4</button>
+                  </div>
+
 
 
 
@@ -321,17 +333,41 @@
                   Select Your Seat
                 </h2>
 
-                <div class="flex justify-between px-9 border-b-2 border-dashed py-4">
+                <div class="bg-green-200 rounded-xl py-4">
+                  <div class="flex justify-between px-9 border-b-2 border-dashed py-4">
+                    <div >
+                      <h2 class="font-bold">Seat <span id="seat-count" class="bg-green-500 px-4 py-1 rounded-2xl text-white">0</span></h2>
+                    </div>
+  
+                    <div>
+                      <h2 class="font-bold">Class</h2>
+                    </div>
+  
+                    <div>
+                      <h2 class="font-bold">Price</h2>
+                    </div>
+  
+                    
+                  </div>
+                  <div>
+                    <ul id="selected-place-conatiner" class="selected-place-container">
+  
+  
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="flex font-bold justify-between px-5 py-4 border-b-2 border-dashed">
+                  <p>Total Price</p>
                   <div >
-                    <h2 class="font-bold">Seat <span id="seat-count" class="bg-green-500 px-4 py-1 rounded-2xl text-white">0</span></h2>
+                    <p id="total-price">0</p>
                   </div>
+                </div>
 
+                <div class="flex font-bold justify-between px-5 py-4">
+                  <p>Grand Total</p>
                   <div>
-                    <h2 class="font-bold">Class</h2>
-                  </div>
-
-                  <div>
-                    <h2 class="font-bold">Price</h2>
+                    <p id="grand-price">0</p>
                   </div>
                 </div>
                 
@@ -340,9 +376,13 @@
                   
                 </div>
 
+                
+
 
 
               </div>
+
+
             </div>
 
         </div>
